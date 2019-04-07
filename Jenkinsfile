@@ -6,12 +6,12 @@ pipeline {
             steps {
                 bat 'clean package'
             }
-        }
         post {
             success {
                 echo 'Now Archiving...'
                 archiveArtifacts artifacts: '**/target/*.war'
             }
         }
+     }
     }
 }
