@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                bat 'cd "F:\Study\Jenkins\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin" && mvn clean package'
+                bat 'cd "F:\\Study\\Jenkins\\apache-maven-3.6.0-bin\\apache-maven-3.6.0\\bin" && mvn clean package'
             }
         post {
             success {
